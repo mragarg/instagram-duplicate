@@ -13,10 +13,29 @@ body {
 }
 
 .picture-frame {
-    width: 150px;
+    width: 33%;
     /* display: inline-block; */
 }
 
 .picture-frame img {
     width: 100%;
+    border: 20px solid white;
+}
+
+.car-playground {
+    border: 5px solid gold;
+    display: flex;
+    flex-direction: row;
+    /* height: 300px; */
+    min-height: 300px;
+
+    /* how to line up on main (X) axis */
+    justify-content: center;
+
+    /* how to line up on cross (Y) axis */
+    align-items: center;
+
+    /* Causes the images to wrap past the line and go to the next row */
+    flex-wrap: wrap;
+
 }
