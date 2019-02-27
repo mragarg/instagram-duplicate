@@ -19,8 +19,12 @@ body {
     text-align: center;
 }
 
+figcaption {
+    text-align: center;
+}
+
 .picture-frame {
-    width: 80%;
+    width: 100%;
     /* display: inline-block; */
     /* height: 180px;
     overflow: hidden; */
@@ -33,13 +37,12 @@ body {
 
 .picture-frame img {
     width: 100%;
-    border: 20px solid white; 
     /* width:  250px;
     height: 250px; */
 }
 
 .car-playground {
-    border: 5px solid gold;
+    /* border: 5px solid gold; */
     display: flex;
     flex-direction: column;
     /* height: 300px; */
@@ -59,9 +62,9 @@ body {
 
 /* media query - similar to an if-statement but for CSS */
 @media screen and (min-width: 700px) {
-    body {
+    /* body {
         background: skyblue;
-    }
+    } */
     .picture-frame {
         width: 33%;
         /* margin-top: 10px;
@@ -77,9 +80,9 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-    body {
+    /* body {
         background: palegreen;
-    }
+    } */
     .logo-text {
         font-size: 40px;
     }
