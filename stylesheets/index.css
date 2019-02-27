@@ -14,8 +14,9 @@ body {
     
 }
 
-h1 {
+.logo-text {
     margin-left: 25px;
+    text-align: center;
 }
 
 .picture-frame {
@@ -57,14 +58,29 @@ h1 {
 }
 
 /* media query - similar to an if-statement but for CSS */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
     body {
         background: skyblue;
     }
+    .picture-frame {
+        width: 33%;
+        /* margin-top: 10px;
+        margin-bottom: 20px; */
+        margin: 20px 0;
+    }
+    .car-playground {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
     body {
         background: palegreen;
+    }
+    .logo-text {
+        font-size: 40px;
     }
 }
