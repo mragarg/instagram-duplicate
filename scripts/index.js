@@ -12,10 +12,14 @@ const targetElements = document.querySelectorAll("[data-target]");
 // We see an enlarged version of image that is
 // inside that .picture-frame
 function respondToClick() {
-    console.log("Hello");
     console.log("Click function is working");
 }
 
-// addEventListener() = waits for event from user (similar to pygame)
-// it takes in two arguments, a string and function
-targetElements[0].addEventListener("click", respondToClick);
+function attachClickHandler(oneElement) {
+    // addEventListener() = waits for event from user (similar to pygame)
+    // it takes in two arguments, a string and function
+    oneElement.addEventListener("click", respondToClick);
+}
+
+
+targetElements.forEach(attachClickHandler);
