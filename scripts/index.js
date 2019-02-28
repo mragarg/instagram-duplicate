@@ -11,8 +11,13 @@ const targetElements = document.querySelectorAll("[data-target]");
 
 // We see an enlarged version of image that is
 // inside that .picture-frame
-function respondToClick() {
+function respondToClick(event) {
     console.log("Click function is working");
+
+    console.log(event.target.parentElement);
+    // add the "big" class to the thing that got clicked
+
+    event.target.parentElement.parentElement.classList.add("big");
 }
 
 function attachClickHandler(oneElement) {
@@ -22,4 +27,4 @@ function attachClickHandler(oneElement) {
 }
 
 
-targetElements.forEach(attachClickHandler);
+targetElements.forEach(attachClickHandler)

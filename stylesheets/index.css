@@ -59,6 +59,11 @@ figcaption {
     height: 250px; */
 }
 
+
+.picture-frame.big img {
+    transform: scale(2.5);
+}
+
 .car-playground {
     /* border: 5px solid gold; */
     display: flex;
