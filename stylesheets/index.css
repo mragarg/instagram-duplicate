@@ -57,6 +57,13 @@ figcaption {
     opacity: 0.9;
     /* width:  250px;
     height: 250px; */
+    /* this smooths out the transition during hover 
+        1. property names of the word "all" (change transform to all)
+        2. duration in seconds or ms
+        3. timing function
+    */
+    transition: all 500ms ease-in-out;
+
 }
 
 

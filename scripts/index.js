@@ -14,10 +14,13 @@ const targetElements = document.querySelectorAll("[data-target]");
 function respondToClick(event) {
     console.log("Click function is working");
 
-    console.log(event.target.parentElement);
+    console.log(event.target);
     // add the "big" class to the thing that got clicked
 
-    event.target.parentElement.parentElement.classList.add("big");
+    // .parentElement x 2 gets the big to be in the .picture-grame
+    // .toggle allows click to big and click again to small 
+    // (toggle on and off)
+    event.target.parentElement.parentElement.classList.toggle("big");
 }
 
 function attachClickHandler(oneElement) {
