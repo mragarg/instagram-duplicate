@@ -38,10 +38,11 @@ figcaption {
 /* When user hovers over the image */
 /* :hover pseudo-class */
 .picture-frame:hover {
-    outline: 5px solid red;
+    /* outline: 5px solid red; */
     /* color: white;
     background: black;
-    transform: scale(1.10); */
+    transform: scale(1.0);
+    opacity: 1.0; */
 }
 
 /* Scale the image up if the picture-frame is being hovered. 
