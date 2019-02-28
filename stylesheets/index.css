@@ -14,6 +14,26 @@ body {
     
 }
 
+/* Key Frame Animation */
+@keyframes roller-coaster {
+    0% {
+        /* opacity: 0; */
+        transform: rotate(0);
+    }
+    50% {
+        /* opacity: 1.0; */
+        transform: rotate(270deg);
+    }
+    100% {
+        /* opacity: 0; */
+        transform: rotate(-90deg);
+    }
+    
+}
+
+
+
+
 .logo-text {
     margin-left: 25px;
     text-align: center;
@@ -62,13 +82,15 @@ figcaption {
         2. duration in seconds or ms
         3. timing function
     */
-    transition: all 500ms ease-in-out;
+    /* transition: all 500ms ease-in-out; */
 
 }
 
 
 .picture-frame.big img {
-    transform: scale(2.5);
+    /* transform: scale(2.5); */
+    opacity: 1.0; 
+    animation: roller-coaster 1s ease-in-out;
 }
 
 .car-playground {
