@@ -35,8 +35,25 @@ figcaption {
     align-items: center;
 }
 
+/* When user hovers over the image */
+/* :hover pseudo-class */
+.picture-frame:hover {
+    outline: 5px solid red;
+    /* color: white;
+    background: black;
+    transform: scale(1.10); */
+}
+
+/* Scale the image up if the picture-frame is being hovered. 
+    Note that the scaling is applied to the img, *not* the picutre frame */
+.picture-frame:hover img {
+    transform: scale(1.10);
+    opacity: 1.0;
+}
+
 .picture-frame img {
     width: 100%;
+    opacity: 0.9;
     /* width:  250px;
     height: 250px; */
 }
