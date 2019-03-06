@@ -30,4 +30,4 @@ function attachClickHandler(oneElement) {
 }
 
 
-targetElements.forEach(attachClickHandler)
+targetElements.forEach(attachClickHandler);
