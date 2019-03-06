@@ -9,5 +9,7 @@ function respondToClick(event) {
     console.log(event.target);
 }
 
-//
-targetPictures[0].addEventListener("click", respondToClick);
+function attachClickHandler(eachElement){
+    eachElement.addEventListener("click", respondToClick);
+}
+targetPictures.forEach(attachClickHandler);
