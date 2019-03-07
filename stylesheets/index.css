@@ -95,3 +95,10 @@
         margin: 20px 0;
     }
 }
+
+.fullViewImg {
+    display: block;
+    margin: auto;
+    width: 50%;
+    animation: ease-in-out 2s;
+}
